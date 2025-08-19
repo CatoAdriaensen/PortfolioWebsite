@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonsterInTheDark</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="c-top" href="#top"><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+    <nav class="c-nav navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <a class="navbar-brand" href="game-MonsterInTheDark.html">CATO ADRIAENSEN &dash; MONSTER IN THE DARK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto align-items-center">
+                <a class="nav-link" href="index.html#projects">PROJECTS</a>
+                <a class="nav-link" href="index.html#about">ABOUT</a>
+                <a class="nav-link" href="index.html#skills">SKILLS</a>
+                <a class="nav-link" href="index.html#contact">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="c-main">
+        <div class="c-game__header">
+            <video class="c-game__img" src="vid/MonsterInTheDark/MonsterInTheDark_GamePlayVideo.mp4" loop controls playsinline autoplay muted></video>
+            <a class="c-game__text c-game__link" href="https://catoadriaensen.itch.io/monster-in-the-dark" target="_blank">
+                <img src="img/Itch_Link.png" style="height: 3rem;">
+                <h1 class="c-game__title">Monster in the dark</h1>
+            </a>
+        </div> 
+        <br>
+        <div> 
+            <br>
+            <h2>Theme</h2>
+            <p>
+                Singleplayer • 2D • TopDown • Strategy • Horror
+            </p>
+            <br>
+
+            <h2>Responsibilities</h2>
+            <ul style="font-size: x-large;">
+                <li>Designed the core mechanic and game loop</li>
+                <li>Brainstormed and prototyped multiple versions and iterations of the game</li>
+                <li>Level design</li>
+            </ul>
+            <br>
+            <h2>Context</h2>
+            <p>
+                <strong>Monster in the dark</strong> is a <strong>small solo game design project</strong> 
+                I created as my final exam assignment for my <strong>Game Design 2</strong> class.
+                <br>
+                The assignment required students to <strong>brainstorm multiple game concepts</strong> inspired by a museum of their choice, 
+                and then develop one of those ideas into a <strong>functional prototype</strong>. 
+            </p>
+            <p>
+                The main focus of the project was <strong>game design,</strong> with an emphasis on brainstorming concepts, 
+                iterating on ideas and designing core gameplay mechanics.
+            </p>
+            <br>
+            <h2>Game</h2>
+            <p>
+                In this game, you're a <strong>kid</strong> left home alone on a dark evening.
+                Your mission is simple: <strong>turn off all the lights</strong> in the house before going to sleep. But be careful, a <strong>monster</strong> is lurking in the dark.
+            </p>
+            <p>
+                The gameplay revolves around the core mechanic: <strong>light is safety, darkness is dangerous.</strong>
+                The player is only safe when standing in any kind of light.
+                They need to turn of all the lights(candles, ceiling lights via the lightswitches) and go to their room to stand on the green square to win.
+            </p>
+        </div>
+        <div class="row">
+            <div class="c-game col-sm-6">
+                <video class="c-game__img c-game__img--variation" src="vid/MonsterInTheDark/MonsterInTheDark_LightSwitch_Full.mp4" loop playsinline autoplay muted>
+            </div>
+            <div class="c-game col-sm-6">
+                <video class="c-game__img c-game__img--variation" src="vid/MonsterInTheDark/MonsterInTheDark_Candle_Full.mp4" loop playsinline autoplay muted>
+            </div>
+        </div>
+        <div>
+            <p>
+                I came up with this idea when I remembered how scared I used to get of the dark whenever I was home alone.
+                I would hit the light switch and run upstairs as fast as possible.
+                I'm certain a lot of people can relate, which is why I thought it would be perfect for a horror game.
+            </p>
+        </div>
+        <div>
+            <br>
+            <h2>Core design Choices</h2>
+            <ul style="font-size: x-large;">
+                <li>
+                    <p><strong> Lights</strong></p>
+                    <p>
+                    Lights are a very important part to the game, they mean <strong>safety from the monster</strong>, but are also an <strong>obstacle</strong> at the same time.
+                    To win, the player must turn off all the lights, but in doing that, it removes their protection.
+                    They know once the lights are off, they are in danger and that's <strong>terrifying.</strong> It's the <strong>core</strong> of the game.
+                    There are <strong>three different kinds of lights:</strong>
+                    </p>
+                    <ol style="font-size: x-large;">
+                        <li>
+                            <p><strong>Candle lights</strong></p>
+                            <p>
+                            Candle lights serve as essential <strong>pitstops</strong>, small safe zones where the player can take a breath and rethink their strategy. 
+                            They serve to help the player get to the light switch and out of the room.
+                            Important to note, candles don't go out themselves, the player must <strong>put them out themselves</strong> turning them also into <strong>obstacles.</strong>
+                            The player needs to plan in advance which candles to put out first, 
+                            making sure they can still reach the next candle or get out before there's no light left.
+                            </p>
+                            <div class="row">
+                                <div class="">
+                                    <video class="c-game__img c-game__img--variation" src="vid/MonsterInTheDark/MonsterInTheDark_Kitchen_Completed.mp4" loop playsinline autoplay muted>
+                                 </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <p><strong>Ceiling lights</strong></p>
+                            <p>
+                            Ceiling lights are the biggest source of light, capable of lighting up entire rooms. 
+                            They can only be turned off using <strong>light switches</strong>(grey squares with a green center) which are strategically placed in each room to add challenge and tension.
+                            </p>
+                            <div class="row">
+                                <div class="c-game col-sm-6">
+                                    <video class="c-game__img c-game__img--variation" src="vid/MonsterInTheDark/MonsterInTheDark_Kitchen_LightSwitch.mp4" loop playsinline autoplay muted>
+                                 </div>
+                                <div class="c-game col-sm-6">
+                                    <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/EarlyLevelDesign_KitchenDesign.png">
+                                </div>
+                            </div>
+                            <p>
+                            For example, in an <strong>early level design</strong>, the <strong>kitchen lightswitch</strong> was placed <strong>right by the door.</strong>
+                            This allowed the player to just put out all the candles in the room first and then turn off the ceiling light when leaving, meaning they were never in the dark.
+                            As a result, the room felt <strong>too easy</strong> and <strong>lacked tension.</strong>
+                            To fix this, the lightswitch was moved deeper into the kitchen, forcing the player to go back through the dark to escape.
+                            <br><br>
+                            The <strong>light switch placements</strong> became essential to making the game both <strong>challenging and engaging.</strong>
+                            </p>
+                        </li>
+                        <br>
+                        <li>
+                            <p><strong>Red boxes lights</strong></p>
+                            <p>
+                            Strategically placed throughout the level, these red boxes <strong>emit a beam of light for a few seconds</strong> when activated. They represent everyday electronic devices like microwaves, TVs, and computers.
+                            While not required to win, they offer <strong>limited time protection</strong> and could be helpfull for players who need a quick moment of safety.
+                            </p>
+                        </li>  
+                        <div class="row">
+                            <div class="c-game col-sm-6">
+                                <video class="c-game__img c-game__img--variation" src="vid/MonsterInTheDark/MonsterInTheDark_RedBox1.mp4" loop playsinline autoplay muted>
+                            </div>
+                            <div class="c-game col-sm-6">
+                                <video class="c-game__img c-game__img--variation" src="vid/MonsterInTheDark/MonsterInTheDark_RedBox2.mp4" loop playsinline autoplay muted>
+                            </div>
+                        </div>
+                </li>
+            </ol>
+            </ul>          
+            <br>
+            <ul style="font-size: x-large;">
+                <li>
+                    <p><strong> The monster</strong></p>
+                    <p>
+                    The monster is the player's <strong>main motivation</strong>, it's presence builds <strong>constant tension</strong>.
+                    The monster <strong>only moves</strong> when the <strong>player</strong> is in the <strong>dark</strong>, creating a constant sense of fear and urgency.
+                    </p>
+                    <p>
+                    In early prototypes, the monster was <strong>completely invisible in the dark.</strong> 
+                    However, while playtesting, it proved too frustating.
+                    Players couldn't see where the monster was, making <strong>escaping</strong> the dark rooms <strong>too difficult.</strong>
+                    To resolve this, I gave the monster red eyes that are visible in the dark without making the monster’s location <strong>too</strong> obvious.
+                    </p>
+                    <div class="row">
+                        <div class="c-game col-sm-6">
+                            <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/MonsterInTheDark_EarlyMonsterDesign_NoEyes.png" alt="EarlyMonsterDesign_NoEyes">
+                        </div>
+                        <div class="c-game col-sm-6">
+                            <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/MonsterInTheDark_EarlyMonsterDesign_Eyes.png" alt="EarlyMonsterDesign_Eyes">
+                        </div>
+                    </div>
+                    <p>
+                    I considered adding a <strong>limited use light source</strong>(ex: a flashlight or candle) that would provide temporary protection.
+                    A <strong>flashlight</strong> could reveal the monster's location, 
+                    while a <strong>candle</strong> could offer protection by surrounding the player with light as long as they hold it.
+                    This would add more strategy to the game.                                                        
+                    </p>
+                    <p>
+                    Sadly, due to <strong>limited time</strong>, I was unable to fully test or implement this feature.
+                    </p>
+                </li>
+            </ul>
+            <br>
+            <ul style="font-size: x-large;">
+                <li>
+                    <p><strong> Level design</strong></p>
+                    <p>
+                    The level design is <strong>crucial</strong> to make this concept work.
+                    It was important to give players <strong>the freedom</strong> to choose their own path and decide which rooms to clear first, 
+                    rather then forcing them down one single linear path.
+                    This freedom gives players a <strong>sense of control</strong>, which a lot enjoy.
+                    </p>
+                    <p>
+                    To make this possible, each room had to be <strong>designed</strong> so it could be <strong>completed in any order.</strong> 
+                    The only constant that remained is that the <strong>Hallway</strong>(the room with the green box) is the <strong>final room.</strong>
+                    Designing each room with this purpose was a challenge, but it all worked out.
+                    </p>
+                    <p>
+                    I started off with a <strong>paper prototype</strong> based off a real house plan to test and explore the level layout and core main gameplay(light).
+                    This gave me alot of good ideas for both the level design and mechanics.
+                    </p>
+                    <div class="row">
+                        <div class="">
+                            <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/EarlyLevelDesign_Paper.png">
+                        </div>
+                    </div>
+
+                    <br>
+                    <p>
+                    After the paper prototype, I went on to design two different level layouts in miro:
+                    </p>
+
+                    <ol style="font-size: x-large;">
+                        <li>
+                            <p><strong>First design</strong></p>
+                            <p>
+                            The first house plan design felt more natural and realistic, making it feel more like an actual house, which better supported the core concept and tone of the game.
+                            </p>
+                            <div class="row">
+                                <div>
+                                    <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/EarlyLevelDesign_V1.0.png">
+                                </div>
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <p><strong>Second design</strong></p>
+                            <p>
+                            This design, which used a series of <strong>the endless rooms</strong>, felt too random, vague, and episodic.
+                            It also lacked a clear end goal, which wasn't what I intended for the game.
+                            There should be a <strong>story and context</strong> to make the player truly feel like a scared kid alone in the dark.
+                            </p>
+                            <div class="row">
+                                <div class="">
+                                    <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/EarlyLevelDesign_V2.png">
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                    <br>
+                    <p>
+                    I continued working on the first design, and after several playtest sessions and iterations, I finished this design before moving into Unity for implementation.
+                    </p>
+                    <div class="row">
+                        <div class="">
+                            <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/LevelDesign_EndOfPaperPrototype.png" alt="LevelDesign_EndOfPaperPrototype">
+                        </div>
+                    </div>
+                    <br>
+                    <p>
+                    While working in unity, I made slight adjustments to the level design layout and eventually ended up with this final design.
+                    Unfortunately, due to time constraints, I was only able to implement the first floor.
+                    </p>
+                    <div class="row">
+                        <div class="">
+                            <img class="c-game__img c-game__img--variation" src="img/MonsterInTheDark/FinalLevelDesign.png" alt="FinalDesign">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <br>
+            <h2>Software and tools</h2>
+            <ul style="font-size: x-large;">
+                <li>
+                <a class="c-link" href="https://miro.com/app/board/uXjVL6FOr0M=/" target="_blank">Miro</a>
+                 for brainstorming and documentation.
+                </li>
+                <li>
+                    Unity as the engine.
+                </li> 
+                <li>
+                    Photoshop to create the visual assets
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div class="c-button">
+        <a class="c-button__link" href="https://catoadriaensen.itch.io/monster-in-the-dark" target="_blank">Available on Itch&period;io</a>
+    </div>
+
+    <div class="c-credit">
+        coded by Jamie Sou <a href="https://www.instagram.com/jamie.sou?igsh=MXh5d2V1azBidnNyNA==" target="_blank"><i class="c-credit__icon bi bi-instagram"></i></a> <br>
+        designed by Cato Adriaensen
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
