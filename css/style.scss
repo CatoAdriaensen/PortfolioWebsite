@@ -18,6 +18,12 @@ $color-gray: #262626;
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  @media (min-width: 993px) {
+    max-width: 1000px;
+  }
+}
+
 .navbar {
   &-nav {
     @media (min-width: 993px) {
@@ -155,7 +161,7 @@ section {
       font-size: 2rem;
     }
     &:hover {
-      color: #e2d2c8;
+      color: #200905;
     }
   }
 
@@ -229,7 +235,7 @@ section {
     transition: color 0.3s;
 
     &:hover {
-      color: #e2d2c8;
+      color: #200905;
     }
   }
 

@@ -8,10 +8,17 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 993px) {
+  .container {
+    max-width: 1000px;
+  }
 }
 
 @media (min-width: 993px) {
@@ -19,9 +26,11 @@
     gap: 2rem;
   }
 }
+
 .navbar-toggler {
   border: none;
 }
+
 .navbar-toggler-icon {
   background-image: url(../img/hamburger.svg);
 }
@@ -42,8 +51,9 @@ h1 {
   margin-bottom: 1rem;
   color: white;
   font-size: 3rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 @media (max-width: 576px) {
   h1 {
     font-size: 2.5rem;
@@ -54,8 +64,9 @@ h2 {
   margin-bottom: 1rem;
   color: white;
   font-size: 2rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 @media (max-width: 576px) {
   h2 {
     font-size: 1.5rem;
@@ -66,8 +77,9 @@ h3 {
   margin-bottom: 1rem;
   color: white;
   font-size: 1.5rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 @media (max-width: 576px) {
   h3 {
     font-size: 1.2rem;
@@ -117,19 +129,29 @@ section {
 .c-game {
   text-align: center;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0;
 }
+
 .c-game__img {
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   width: 95%;
 }
+
 .c-game__img--variation {
   border-radius: 1rem;
 }
+
 .c-game__text {
   background-color: #6b252d;
   padding: 2rem;
@@ -137,29 +159,46 @@ section {
   border-bottom-right-radius: 5rem;
   width: 95%;
 }
+
 .c-game__title {
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
   font-size: 2.5rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 @media (max-width: 576px) {
   .c-game__title {
     font-size: 2rem;
   }
 }
+
 .c-game__title:hover {
-  color: #e2d2c8;
+  color: #200905;
 }
+
 .c-game__header {
   padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .c-game__link {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1rem;
 }
 
@@ -170,9 +209,11 @@ section {
   border-top-right-radius: 1rem;
   padding: 0.5rem 1rem;
 }
+
 .c-skill__title--variation {
   border-radius: 1rem;
 }
+
 .c-skill__list {
   padding-top: 0.5rem;
   border: 5px solid #6b252d;
@@ -187,16 +228,24 @@ section {
 
 .c-socials {
   margin: 5rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2rem;
   height: 8vh;
 }
+
 .c-socials__img {
   height: 3rem;
+  -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
+
 .c-socials__img:hover {
   height: 3.5rem;
 }
@@ -204,6 +253,7 @@ section {
 .c-button {
   margin: 10rem 0 5rem;
 }
+
 .c-button__link {
   background-color: #6b252d;
   color: white;
@@ -211,21 +261,24 @@ section {
   padding: 1rem 2rem;
   border-radius: 5rem;
   font-size: xx-large;
+  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
+
 .c-button__link:hover {
-  color: #e2d2c8;
+  color: #200905;
 }
 
 .c-credit {
-  border-top: dotted rgb(185, 185, 185) 2px;
+  border-top: dotted #b9b9b9 2px;
   padding: 1rem 0;
   margin-top: 3rem;
   text-align: center;
-  color: rgb(185, 185, 185);
+  color: #b9b9b9;
 }
+
 .c-credit__icon {
-  color: rgb(185, 185, 185);
+  color: #b9b9b9;
 }
 
 .c-gamepage li {
@@ -235,3 +288,4 @@ section {
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
+/*# sourceMappingURL=style.css.map */
