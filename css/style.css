@@ -1,6 +1,7 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /*---------------------------------------/*
  # GENERIC - BOOTSTRAP
 /*---------------------------------------*/
@@ -9,8 +10,8 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (min-width: 993px) {
@@ -35,17 +36,42 @@
 body {
   background-color: #262626;
   color: white;
-  margin: 0 5rem;
-}
-@media (min-width: 993px) {
-  body {
-    margin: 0 20rem;
-  }
 }
 
 h1 {
   margin-bottom: 1rem;
   color: white;
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 576px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 p {
@@ -75,7 +101,6 @@ section {
 .c-nav {
   background-color: #6b252d !important;
   color: white !important;
-  padding: 0.5rem 5rem;
   border-bottom: 2px solid #262626;
 }
 
@@ -107,13 +132,20 @@ section {
 }
 .c-game__text {
   background-color: #6b252d;
-  padding: 1rem 0 0;
+  padding: 2rem;
   border-bottom-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
   width: 95%;
 }
 .c-game__title {
   transition: color 0.3s;
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+@media (max-width: 576px) {
+  .c-game__title {
+    font-size: 2rem;
+  }
 }
 .c-game__title:hover {
   color: #e2d2c8;
@@ -150,13 +182,16 @@ section {
 
 .c-link {
   text-decoration: none;
+  color: #6b252d;
 }
 
 .c-socials {
-  padding: 5rem 0 2rem;
+  margin: 5rem 0 2rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
+  height: 8vh;
 }
 .c-socials__img {
   height: 3rem;
@@ -191,6 +226,10 @@ section {
 }
 .c-credit__icon {
   color: rgb(185, 185, 185);
+}
+
+.c-gamepage li {
+  margin-top: 1rem;
 }
 
 /*---------------------------------------/*
