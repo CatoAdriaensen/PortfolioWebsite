@@ -53,12 +53,12 @@
                 </p>
                 <br>
 
-                <h2>Responsibilities</h2>
+                <h2>Responsibilities in the team</h2>
                 <ul style="font-size: x-large;">
                     <li>Designed the core mechanic and game loop</li>
                     <li>Designed the dialogue system</li>
                 </ul>
-                <br>
+                <!-- <br>
                 <h2>Context</h2>
                 <p>
                     <strong>Web of lies</strong> is a <strong>small game jam project</strong>
@@ -66,19 +66,19 @@
                     The jam lasted for about two days, and the theme was <strong>"Spreading it".</strong>
                     <br>
                     I was one of two <strong>game designers.</strong>
-                </p>
+                </p> -->
                 <br>
                 <h2>Game</h2>
                 <p>
-                    In this game, <strong>you and a friend</strong> find yourselves in an <strong>office with a detective</strong>.
+                    In <i>Web Of Lies</i>, <strong>you and a friend</strong> find yourselves in an office with a detective.
                     Neither of you know why you're there, a sudden case of <strong>amnesia?</strong> Whatever it may be,
                     the detective questions you both about <strong>a murder case</strong>, and he wants answers now!
                     You'll both need to come up with an <strong>alibi</strong> and stick to it,
                     while also <strong>remembering each other's story.</strong>
                 </p>
                 <p>
-                    The <strong>core gameplay</strong> involves <strong>answering the detective's questions</strong> by picking from a set of options in real time,
-                    while trying to stay <strong>consistent</strong> with the <strong>alibi</strong> you created together.
+                    The core gameplay involves <strong>answering the detective's questions</strong> by picking from a set of options in real time,
+                    while trying to stay consistent with the <strong>alibi</strong> you created together.
                     This game <strong>tests</strong> the players <strong>memories and trust.</strong>
                 </p>
             </div>
@@ -97,15 +97,14 @@
                     or will you stick together until the end?
                 </p>
                 <br>
-            <h2>Important note</h2>
-            <p>
+            <h2>Ranked 2# Best Idea</h2>
+            <!-- <p>
                 This game is still <strong>in development</strong> due to several <strong>bugs and technical issues</strong>
                 that currently make it <strong>difficult to play properly</strong>.
                 Because of this I will mostly focus on discussing the design choices behind the game.
-            </p>
+            </p> -->
             <p>
-                However, I wanted to share it because it <strong>ranked 2# for best idea out of 30</strong> in the jam, and
-                I'm confident that once the bugs are fixed, the game will <strong>really shine.</strong>
+                <i>Web Of Lies</i> got <strong>ranked 2# for best idea out of 30</strong> in the gamejam that my team and I created it for.
             </p>
             </div>
             <div>
@@ -122,14 +121,24 @@
                         <p><strong> Suspicion meter</strong></p>
                         <p>
                             Each player has a <strong>suspicion meter</strong> that shows how suspicious they are at any moment.
+                            <br>
+                            <br>
                             The meter is simple:
-                            <br>
-                            A <strong>wrong</strong> answer will <strong>increase the player's meter,</strong>
-                            and if it becomes <strong>full,</strong> the detective will assume <strong>they're guilty.</strong>
-                            <br>
-                            A <strong>correct</strong> answer will <strong>decrease the meter,</strong>
-                            and if it becomes <strong>empty,</strong> the detective will assume <strong>they're innocent.</strong>
                         </p>
+                        <ul style="font-size: x-large;">
+                            <li>
+                                <p>
+                                    A <strong>wrong</strong> answer will <strong>increase the player's meter,</strong>
+                                    and if it becomes <strong>full,</strong> the detective will assume <strong>they're guilty.</strong>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    A <strong>correct</strong> answer will <strong>decrease the meter,</strong>
+                                    and if it becomes <strong>empty,</strong> the detective will assume <strong>they're innocent.</strong>
+                                </p>
+                            </li>
+                        </ul>
                         <div class="row">
                             <div>
                                 <img class="c-game__img c-game__img--variation" src="img/WebOfLies/SuspicionMeter.png" alt="Suspicion Meter">
@@ -144,7 +153,7 @@
                         <p>
                             We wanted to include a <strong>variety of questions,</strong>
                             but before that, we needed to establish the core questions structure.
-                            Each question falls into one of <strong>four one core categories</strong>, each with four possible answers.
+                            Each question falls into one of <strong>four core categories</strong>, each with four possible answers.
                         </p>
                         <ol style="font-size: x-large;">
                             <li>
@@ -194,31 +203,27 @@
                     <li>
                     <p><strong> Two phases</strong></p>
                     <p>
-                        The game is divided into <strong>two phases,</strong> both of which use the <strong>same core questions</strong> as a <strong>base</strong>:
+                        The game is divided into two phases, both of which use the <strong>same core questions</strong> as a <strong>base</strong>:
                     </p>
                     <ol style="font-size: x-large;">
                             <li>
                                 <p><strong>The story building phase</strong></p>
                                 <p>
-                                    Both players build their <strong>alibi</strong> by answering the detective's questions.
-                                    <br>
-                                    The questions in these phase are <strong>short and simple,</strong> designed to <strong>gather</strong> the core <strong>information.</strong>
+                                    Both players build their <strong>alibi</strong> by answering the detective's questions
+                                    that are short and simple, designed to <strong>gather</strong> the core <strong>information.</strong>
                                 </p>
                             </li>
                             <li>
                                 <p><strong>The questioning phase</strong></p>
                                 <p>
-                                    The detective tries to <strong>catch one of the players in a lie</strong> by <strong>questioning</strong> what was said earlier
+                                    The detective tries to <strong>catch one of the players in a lie</strong> by questioning what was said earlier
                                     and looking for any inconsistencies.
-                                </p>
-                                <p>
-                                    This phase really <strong>tests players.</strong>
-                                    They must <strong>remember their answers</strong> from the first phase
-                                    to correctly <strong>answer in this phase.</strong>
+                                    This phase really tests players as they must <strong>remember their answers</strong> from the first phase
+                                    to correctly answer in this phase.
                                 </p>
                                 <br>
                                 <p>
-                                    <strong>Design choices</strong> for phase two questions:
+                                    Design choices for phase two questions:
                                 </p>
                                 <ul style="font-size: x-large;">
                                     <li>
@@ -236,7 +241,7 @@
                                     </li>
                                     <li>
                                         <p>
-                                            Every question, the <strong>detective responds based</strong> on whether the answer was <strong>correct or not</strong> to make it seem more like a real interrogation.
+                                            Every question, the <strong>detective responds based</strong> on whether the answer was correct or not to make it seem more like a real interrogation.
                                             The detective's responses is a mix between serious and funny to keep the overall tone light.
                                             Sometimes, the detective asks a small follow up question.
                                         </p>
@@ -293,12 +298,11 @@
                     <li>
                         <p><strong> Multiple endings:</strong></p>
                         <p>
-                            We build <strong>tension between the players</strong> by giving them some opportunities to <strong>betray each other.</strong>
-                            This mechanic leads to <strong>four possible endings:</strong>
+                            We build tension between the players by giving them opportunities to betray each other, leading to <strong>four possible endings:</strong>
                         </p>
                         <ol style="font-size: x-large;">
                             <li>
-                                <p>Player 1 gets caught, while player 2 is free</p>
+                                <p>Player 1 gets caught, while Player 2 is free</p>
                                 <div class="row">
                                     <div>
                                         <img class="c-game__img c-game__img--variation" src="img/WebOfLies/Win_Lose_Ending_bg.png" alt="RankOnItch">
@@ -306,7 +310,7 @@
                                 </div>
                             </li>
                             <li>
-                                <p>Player 2 gets caught, while player 1 is free</p>
+                                <p>Player 2 gets caught, while Player 1 is free</p>
                                 <div class="row">
                                     <div>
                                         <img class="c-game__img c-game__img--variation" src="img/WebOfLies/Lose_Win_Ending_bg.png" alt="RankOnItch">
@@ -338,9 +342,8 @@
                         <p><strong> Controls:</strong></p>
                         <p>
                             We were inspired by the <strong>Wii Party friendship test</strong> controls.
-                            <br>
-                            The <strong>core concept</strong> was that both players had to <strong>answer the same questions
-                            without knowing</strong> what the <strong>other answered</strong> until the answers were revealed.
+                            The core concept was that both players had to answer the same questions
+                            without knowing what the other answered until the answers were revealed.
                             We thought this was a great way to allow players to <strong>possibly betray each other</strong>,
                             for example, one player blaming the other player.
                         </p>
@@ -353,9 +356,8 @@
                             </div>
                         </div>
                         <p>
-                            We planned on implementing this concept with <strong>xbox controllers</strong>.
-                            However, due to <strong>time constraints</strong>, we weren't able to implement this.
-                            <br>
+                            We planned on implementing this concept with xbox controllers.
+                            However, due to time constraints, we weren't able to implement this.
                             Instead, the players <strong>share one mouse</strong>, switching it whenever it's their turn to answer.
                         </p>
                     </li>
